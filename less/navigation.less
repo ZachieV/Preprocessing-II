@@ -10,11 +10,23 @@
   border-bottom: 2px dashed #C0C0C0;
   padding: 0;
   margin-bottom: 20px;
+  @media @phone {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   h1 {
     padding-bottom: 20px;
     height: auto;
-    width: 30%;
+    width: 34%;
+    @media @phone {
+      padding-bottom: 10px;
+      margin-top: 5px;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   nav {
@@ -23,6 +35,11 @@
     justify-content: flex-end;
     height: auto;
     width: 69%;
+    @media @phone {
+      padding: 0;
+      justify-content: space-between;
+      width: 100%;
+    }
 
     a {
       align-content: center;
@@ -37,6 +54,9 @@
       font-size: 1.4rem;
       color: black;
       text-decoration: none;
+      @media @phone {
+        width: auto;
+      }
     }
   }
 }
